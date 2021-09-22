@@ -13,7 +13,14 @@ typedef enum tagTipoToken {
     TOKEN_MULT,
     TOKEN_ABREPAR,
     TOKEN_FECHAPAR,
-    TOKEN_EOF
+    TOKEN_EOF,
+
+    // Adições atividade 2
+    TOKEN_SUB,
+    TOKEN_DIV,
+    TOKEN_ABRECOL,
+    TOKEN_FECHACOL
+
 } TipoToken;
 
 typedef struct tagToken {

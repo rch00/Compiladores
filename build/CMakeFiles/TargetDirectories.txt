@@ -1,0 +1,3 @@
+/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/build/CMakeFiles/rebuild_cache.dir
+/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/build/CMakeFiles/edit_cache.dir
+/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/build/CMakeFiles/minicalc.dir

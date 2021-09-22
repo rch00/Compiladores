@@ -35,6 +35,21 @@ void ImprimeTipoToken(TipoToken tipo) {
         case TOKEN_ERRO:
             printf("TOKEN_ERRO");
             break;
+
+        //Adições atividade 2
+        case TOKEN_SUB:
+            printf("TOKEN_SUB");
+            break;
+        case TOKEN_DIV:
+            printf("TOKEN_DIV");
+            break;
+        case TOKEN_ABRECOL:
+            printf("TOKEN_ABRECOL");
+            break;
+        case TOKEN_FECHACOL:
+            printf("TOKEN_FECHACOL");
+            break;
+
         default:
             printf("Tipo desconhecido");
     }
