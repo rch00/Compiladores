@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "minicalc",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "lexertest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lexertest-Debug-723274eeb2bf360347c1.json",
+					"name" : "lexertest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "minicalc::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-minicalc-Debug-81494b678615d67137fe.json",
+					"jsonFile" : "target-minicalc-Debug-e46e99bc4f18b04cd60c.json",
 					"name" : "minicalc",
 					"projectIndex" : 0
 				}

@@ -1,5 +1,5 @@
-CMakeFiles/minicalc.dir/main.c.o: \
- /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/main.c \
+CMakeFiles/lexertest.dir/lexertest.c.o: \
+ /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexertest.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -48,5 +48,4 @@ CMakeFiles/minicalc.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/arq.h \
- /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexer.h \
- /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/parser.h
+ /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexer.h

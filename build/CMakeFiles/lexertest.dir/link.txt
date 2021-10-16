@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-gcc-9 -g CMakeFiles/lexertest.dir/lexertest.c.o CMakeFiles/lexertest.dir/arq.c.o CMakeFiles/lexertest.dir/lexer.c.o -o lexertest 

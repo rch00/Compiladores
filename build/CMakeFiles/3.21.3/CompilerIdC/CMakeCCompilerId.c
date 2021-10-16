@@ -307,22 +307,6 @@
   # define COMPILER_VERSION_PATCH DEC(__ARMCOMPILER_VERSION     % 10000)
 # define COMPILER_VERSION_INTERNAL DEC(__ARMCOMPILER_VERSION)
 
-#elif defined(__clang__) && __has_include(<hip/hip_version.h>)
-# define COMPILER_ID "ROCMClang"
-# if defined(_MSC_VER)
-#  define SIMULATE_ID "MSVC"
-# elif defined(__clang__)
-#  define SIMULATE_ID "Clang"
-# elif defined(__GNUC__)
-#  define SIMULATE_ID "GNU"
-# endif
-# if defined(__clang__) && __has_include(<hip/hip_version.h>)
-#  include <hip/hip_version.h>
-#  define COMPILER_VERSION_MAJOR DEC(HIP_VERSION_MAJOR)
-#  define COMPILER_VERSION_MINOR DEC(HIP_VERSION_MINOR)
-#  define COMPILER_VERSION_PATCH DEC(HIP_VERSION_PATCH)
-# endif
-
 #elif defined(__clang__)
 # define COMPILER_ID "Clang"
 # if defined(_MSC_VER)

@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lexertest
+
+# Build rule for target.
+lexertest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lexertest
+.PHONY : lexertest
+
+# fast build rule for target.
+lexertest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/build
+.PHONY : lexertest/fast
+
+#=============================================================================
 # Target rules for targets named minicalc
 
 # Build rule for target.
@@ -134,6 +147,7 @@ arq.o: arq.c.o
 
 # target to build an object file
 arq.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/arq.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/arq.c.o
 .PHONY : arq.c.o
 
@@ -142,6 +156,7 @@ arq.i: arq.c.i
 
 # target to preprocess a source file
 arq.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/arq.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/arq.c.i
 .PHONY : arq.c.i
 
@@ -150,6 +165,7 @@ arq.s: arq.c.s
 
 # target to generate assembly for a file
 arq.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/arq.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/arq.c.s
 .PHONY : arq.c.s
 
@@ -158,6 +174,7 @@ lexer.o: lexer.c.o
 
 # target to build an object file
 lexer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/lexer.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/lexer.c.o
 .PHONY : lexer.c.o
 
@@ -166,6 +183,7 @@ lexer.i: lexer.c.i
 
 # target to preprocess a source file
 lexer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/lexer.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/lexer.c.i
 .PHONY : lexer.c.i
 
@@ -174,8 +192,33 @@ lexer.s: lexer.c.s
 
 # target to generate assembly for a file
 lexer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/lexer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/lexer.c.s
 .PHONY : lexer.c.s
+
+lexertest.o: lexertest.c.o
+.PHONY : lexertest.o
+
+# target to build an object file
+lexertest.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/lexertest.c.o
+.PHONY : lexertest.c.o
+
+lexertest.i: lexertest.c.i
+.PHONY : lexertest.i
+
+# target to preprocess a source file
+lexertest.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/lexertest.c.i
+.PHONY : lexertest.c.i
+
+lexertest.s: lexertest.c.s
+.PHONY : lexertest.s
+
+# target to generate assembly for a file
+lexertest.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lexertest.dir/build.make CMakeFiles/lexertest.dir/lexertest.c.s
+.PHONY : lexertest.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -201,6 +244,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/main.c.s
 .PHONY : main.c.s
 
+parser.o: parser.c.o
+.PHONY : parser.o
+
+# target to build an object file
+parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/parser.c.o
+.PHONY : parser.c.o
+
+parser.i: parser.c.i
+.PHONY : parser.i
+
+# target to preprocess a source file
+parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/parser.c.i
+.PHONY : parser.c.i
+
+parser.s: parser.c.s
+.PHONY : parser.s
+
+# target to generate assembly for a file
+parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minicalc.dir/build.make CMakeFiles/minicalc.dir/parser.c.s
+.PHONY : parser.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -209,6 +276,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... lexertest"
 	@echo "... minicalc"
 	@echo "... arq.o"
 	@echo "... arq.i"
@@ -216,9 +284,15 @@ help:
 	@echo "... lexer.o"
 	@echo "... lexer.i"
 	@echo "... lexer.s"
+	@echo "... lexertest.o"
+	@echo "... lexertest.i"
+	@echo "... lexertest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... parser.o"
+	@echo "... parser.i"
+	@echo "... parser.s"
 .PHONY : help
 
 

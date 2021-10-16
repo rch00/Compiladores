@@ -1,6 +1,21 @@
 [
 {
   "directory": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9   -g -std=gnu11 -o CMakeFiles/lexertest.dir/lexertest.c.o -c /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexertest.c",
+  "file": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexertest.c"
+},
+{
+  "directory": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9   -g -std=gnu11 -o CMakeFiles/lexertest.dir/arq.c.o -c /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/arq.c",
+  "file": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/arq.c"
+},
+{
+  "directory": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9   -g -std=gnu11 -o CMakeFiles/lexertest.dir/lexer.c.o -c /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexer.c",
+  "file": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexer.c"
+},
+{
+  "directory": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/build",
   "command": "/bin/x86_64-linux-gnu-gcc-9   -g -std=gnu11 -o CMakeFiles/minicalc.dir/main.c.o -c /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/main.c",
   "file": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/main.c"
 },
@@ -13,5 +28,10 @@
   "directory": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/build",
   "command": "/bin/x86_64-linux-gnu-gcc-9   -g -std=gnu11 -o CMakeFiles/minicalc.dir/lexer.c.o -c /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexer.c",
   "file": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexer.c"
+},
+{
+  "directory": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9   -g -std=gnu11 -o CMakeFiles/minicalc.dir/parser.c.o -c /home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/parser.c",
+  "file": "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/parser.c"
 }
 ]

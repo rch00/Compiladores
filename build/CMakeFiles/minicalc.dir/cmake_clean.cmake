@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/minicalc.dir/lexer.c.o.d"
   "CMakeFiles/minicalc.dir/main.c.o"
   "CMakeFiles/minicalc.dir/main.c.o.d"
+  "CMakeFiles/minicalc.dir/parser.c.o"
+  "CMakeFiles/minicalc.dir/parser.c.o.d"
   "minicalc"
   "minicalc.pdb"
 )

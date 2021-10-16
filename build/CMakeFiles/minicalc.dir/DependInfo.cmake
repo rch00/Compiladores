@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/arq.c" "CMakeFiles/minicalc.dir/arq.c.o" "gcc" "CMakeFiles/minicalc.dir/arq.c.o.d"
   "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/lexer.c" "CMakeFiles/minicalc.dir/lexer.c.o" "gcc" "CMakeFiles/minicalc.dir/lexer.c.o.d"
   "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/main.c" "CMakeFiles/minicalc.dir/main.c.o" "gcc" "CMakeFiles/minicalc.dir/main.c.o.d"
+  "/home/rch00/UFPB/Graduação/P6/Compiladores/Atividade_2/minicalc/parser.c" "CMakeFiles/minicalc.dir/parser.c.o" "gcc" "CMakeFiles/minicalc.dir/parser.c.o.d"
   )
 
 # Targets to which this target links.
