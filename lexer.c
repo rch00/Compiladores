@@ -50,7 +50,6 @@ char* TextoToken(long ini, long fim) {
     return str;
 }
 
-// Adicionado os simbolos - /  [ ]
 bool simbolo(char c) {
     return (c == '(' || c == ')' || c == '+' || c == '*' || c == '-' || c == '/' || c == '[' || c == ']');
 }
@@ -88,6 +87,7 @@ Token* ProximoToken() {
         // TODO: verificar se existe erro léxico no final do literal inteiro
         while (!eof() && isdigit(buffer->cont[pos]))
             pos++;
+
         char *texto = TextoToken(initPos, pos);
         tok->tipo = TOKEN_INT;
         tok->valor = atoi(texto);
@@ -106,8 +106,6 @@ Token* ProximoToken() {
             case '*':
                 tok->tipo = TOKEN_MULT;
                 break;
-
-            // Adições da atividade 2
             case '-':
                 tok->tipo = TOKEN_SUB;
                 break;
@@ -120,7 +118,6 @@ Token* ProximoToken() {
             case ']':
                 tok->tipo = TOKEN_FECHACOL;
                 break;
-
             default:
                 fprintf(stderr, "Simbolo não esperado: %c\n", buffer->cont[pos]);
         }
