@@ -50,15 +50,16 @@ char* TextoToken(long ini, long fim) {
     return str;
 }
 
+
 bool simbolo(char c) {
-    return (c == '(' || c == ')' || c == '+' || c == '*' || c == '-' || c == '/' || c == '[' || c == ']');
+    return (c == '(' || c == ')' || c == '+' || c == '*' || c == '-'|| c == '/'|| c == '=' || c == ';');
 }
 
 // função: ProximoToken
 //
 // Dado o arquivo-fonte, obtem e retorna o próximo token
 Token* ProximoToken() {
-    // TODO: obtem o proximo token da entrada e preenche tok
+    // obtem o proximo token da entrada e preenche tok
 
     // pula espaços em branco
     while (!eof() && isspace(buffer->cont[pos]))
@@ -69,7 +70,7 @@ Token* ProximoToken() {
         tok->valor = 0;
     } else if (isalpha(buffer->cont[pos])) {
         long initPos = pos;
-        while (!eof() && !isspace(buffer->cont[pos]))
+        while (!eof() && !isspace(buffer->cont[pos]) && !simbolo(buffer->cont[pos]))
             pos++;
         // texto do token: entre initPos e pos-1 no buffer
         char *texto = TextoToken(initPos, pos);
@@ -77,9 +78,12 @@ Token* ProximoToken() {
         {
             tok->tipo = TOKEN_PRINT;
             tok->valor = 0;
-        } else {
-            tok->tipo = TOKEN_ERRO;
+        } else if (strcmp(texto, "var") == 0) {
+            tok->tipo = TOKEN_VAR;
             tok->valor = 0;
+        } else {
+            tok->tipo = TOKEN_IDENT;
+            strcpy(tok->nome, texto);
         }
         free(texto);
     } else if (isdigit(buffer->cont[pos])) {
@@ -106,18 +110,22 @@ Token* ProximoToken() {
             case '*':
                 tok->tipo = TOKEN_MULT;
                 break;
+            case '=':
+                tok->tipo = TOKEN_IGUAL;
+                break;
+            case ';':
+                tok->tipo = TOKEN_PONTOVIRG;
+                break;
+
+
+            // Atividade 4
             case '-':
                 tok->tipo = TOKEN_SUB;
                 break;
             case '/':
                 tok->tipo = TOKEN_DIV;
                 break;
-            case '[':
-                tok->tipo = TOKEN_ABRECOL;
-                break;
-            case ']':
-                tok->tipo = TOKEN_FECHACOL;
-                break;
+
             default:
                 fprintf(stderr, "Simbolo não esperado: %c\n", buffer->cont[pos]);
         }
